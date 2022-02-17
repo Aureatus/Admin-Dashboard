@@ -106,7 +106,7 @@ main {
   grid-area: searchbar;
   display: grid;
   grid-template: 1fr / 1fr 5fr;
-  column-gap: 10px;
+  column-gap: 20px;
 }
 
 .searchbar img {
@@ -148,6 +148,25 @@ main {
 
 .greeting {
   grid-area: greeting;
+  display: grid;
+  grid-template: 1fr / 1fr 4fr;
+  column-gap: 20px;
+  align-items: center;
+}
+
+.greeting .profile-picture {
+  width: 70px;
+  height: 70px;
+  background-color: black;
+  justify-self: end;
+}
+
+.greeting .greeting-message {
+  font-size: 2rem;
+}
+
+.greeting .greeting-message::first-line {
+  font-size: 1rem;
 }
 
 .buttons {
