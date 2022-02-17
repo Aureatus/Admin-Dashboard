@@ -104,6 +104,26 @@ main {
 
 .searchbar {
   grid-area: searchbar;
+  display: grid;
+  grid-template: 1fr / 1fr 5fr;
+  column-gap: 10px;
+}
+
+.searchbar img {
+  width: 40px;
+  height: 40px;
+}
+
+.searchbar label {
+  justify-self: end;
+  align-self: center;
+}
+
+.searchbar input {
+  width: 60%;
+  height: 40%;
+  justify-self: start;
+  align-self: center;
 }
 
 .userinfo {
