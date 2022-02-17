@@ -26,6 +26,12 @@ header {
   grid-row: 1 / 2;
   grid-column: 2 / 3;
   background-color: white;
+
+  display: grid;
+  grid-template: 1fr 2fr / 2fr 1fr;
+  grid-template-areas:
+    "searchbar userinfo"
+    "greeting buttons";
 }
 
 main {
@@ -42,4 +48,20 @@ branding {
 navigation {
   grid-row: 2 / 3;
   grid-column: 1 / 2;
+}
+
+searchbar {
+  grid-area: searchbar;
+}
+
+userinfo {
+  grid-area: userinfo;
+}
+
+greeting {
+  grid-area: greeting;
+}
+
+buttons {
+  grid-area: buttons;
 }
