@@ -14,6 +14,11 @@ h4 {
   padding: 0;
 }
 
+p {
+  margin: 0;
+  padding: 0;
+}
+
 .container {
   height: 100%;
   width: 100%;
@@ -52,6 +57,9 @@ main {
   grid-template-areas:
     "projects announcements"
     "projects trending";
+
+  padding-left: 20px;
+  padding-bottom: 60px;
 }
 
 .branding {
@@ -186,6 +194,34 @@ main {
 }
 .projects {
   grid-area: projects;
+
+  display: grid;
+  grid-template: 1fr 10fr / 1fr;
+  row-gap: 10px;
+}
+
+.projects h4 {
+  align-self: flex-end;
+}
+
+.projects .content {
+  display: grid;
+  grid-template: 1fr 1fr 1fr / 1fr 1fr;
+  gap: 20px;
+}
+
+.card {
+  display: grid;
+}
+
+.card .logos {
+  justify-self: end;
+  align-self: center;
+}
+
+.card .logos img {
+  height: 30px;
+  width: 30px;
 }
 
 .announcements {
