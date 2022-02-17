@@ -38,6 +38,12 @@ main {
   grid-row: 2 / 3;
   grid-column: 2 / 3;
   background-color: #e2e8f0;
+
+  display: grid;
+  grid-template: 1fr 1fr / 2fr 1fr;
+  grid-template-areas:
+    "projects announcements"
+    "projects trending";
 }
 
 branding {
@@ -64,4 +70,16 @@ greeting {
 
 buttons {
   grid-area: buttons;
+}
+
+projects {
+  grid-area: projects;
+}
+
+announcements {
+  grid-area: announcements;
+}
+
+trending {
+  grid-area: trending;
 }
