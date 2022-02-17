@@ -129,7 +129,7 @@ main {
 .userinfo {
   grid-area: userinfo;
   display: grid;
-  grid-template: 1fr / 1fr 1fr 5fr;
+  grid-template: 1fr / 1fr 1fr 4fr;
   justify-self: center;
   justify-items: start;
   align-items: center;
@@ -152,8 +152,19 @@ main {
 
 .buttons {
   grid-area: buttons;
+  display: grid;
+  grid-template: 1fr / 1fr 1fr 1fr;
+  justify-self: start;
+  justify-items: center;
+  align-items: center;
+  column-gap: 30px;
+  width: 100%;
 }
 
+.buttons button {
+  width: 80%;
+  height: 30%;
+}
 .projects {
   grid-area: projects;
 }
