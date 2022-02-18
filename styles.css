@@ -9,7 +9,8 @@ body {
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5 {
   margin: 0;
   padding: 0;
 }
@@ -230,4 +231,22 @@ main {
 
 .trending {
   grid-area: trending;
+  display: grid;
+  grid-template: 1fr 12fr / 1fr;
+}
+
+.trending .profiles {
+  display: grid;
+  grid-template: 1fr 1fr 1fr 1fr / 1fr;
+}
+
+.trending .profiles .profile {
+  display: grid;
+  grid-template: 1fr / 1fr 6fr;
+  align-items: center;
+}
+
+.trending .profiles .profile img {
+  width: 40px;
+  height: 40px;
 }
