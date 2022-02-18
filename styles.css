@@ -20,6 +20,17 @@ p {
   padding: 0;
 }
 
+hr {
+  unicode-bidi: isolate;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  overflow: auto;
+  border-style: none;
+  border-width: 0px;
+}
+
 .container {
   height: 100%;
   width: 100%;
@@ -227,12 +238,40 @@ main {
 
 .announcements {
   grid-area: announcements;
+  display: grid;
+  grid-template: 1fr 5fr / 1fr;
+}
+
+.announcements h4 {
+  align-self: flex-end;
+}
+
+.announcements .content {
+  display: grid;
+  grid-template: 1fr 1fr 1fr / 1fr;
+  align-items: center;
+}
+
+.announcement {
+  display: grid;
+  height: 100%;
+  grid-template: 1fr 3fr 1fr / 1fr;
+}
+
+.announcement hr {
+  height: 1px;
+  color: gray;
+  background-color: gray;
 }
 
 .trending {
   grid-area: trending;
   display: grid;
   grid-template: 1fr 12fr / 1fr;
+}
+
+.trending h4 {
+  align-self: flex-end;
 }
 
 .trending .profiles {
