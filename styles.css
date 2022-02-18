@@ -33,6 +33,7 @@ hr {
 
 * {
   font-family: roboto, sans-serif;
+  font-size: 99%;
 }
 .container {
   height: 100%;
