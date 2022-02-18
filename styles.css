@@ -31,6 +31,9 @@ hr {
   border-width: 0px;
 }
 
+* {
+  font-family: roboto, sans-serif;
+}
 .container {
   height: 100%;
   width: 100%;
@@ -85,9 +88,12 @@ main {
 }
 
 .branding img {
-  background-color: black;
   width: 50px;
   height: 50px;
+}
+
+.branding h2 {
+  color: white;
 }
 
 .navigation {
@@ -96,6 +102,10 @@ main {
   display: flex;
   flex-direction: column;
   gap: 80px;
+}
+
+.navigation h3 {
+  color: white;
 }
 
 .main-nav {
@@ -117,7 +127,6 @@ main {
 }
 
 .navigation img {
-  background-color: mintcream;
   width: 30px;
   height: 30px;
 }
