@@ -10,12 +10,9 @@ h1,
 h2,
 h3,
 h4,
-h5 {
-  margin: 0;
-  padding: 0;
-}
-
-p {
+h5,
+p,
+button {
   margin: 0;
   padding: 0;
 }
@@ -58,10 +55,12 @@ header {
   background-color: white;
 
   display: grid;
-  grid-template: 1fr 2fr / 2fr 1fr;
+  grid-template: 1fr 2fr / 6fr 4fr;
   grid-template-areas:
     "searchbar userinfo"
     "greeting buttons";
+
+  padding-top: 20px;
 }
 
 main {
@@ -76,7 +75,7 @@ main {
     "projects trending";
 
   padding-left: 20px;
-  padding-bottom: 60px;
+  padding-bottom: 40px;
 }
 
 .branding {
@@ -142,23 +141,29 @@ main {
 .searchbar {
   grid-area: searchbar;
   display: grid;
-  grid-template: 1fr / 1fr 5fr;
+  grid-template: 1fr / 1fr 4fr;
   column-gap: 20px;
-}
-
-.searchbar img {
+  justify-self: auto;
 }
 
 .searchbar label {
   justify-self: end;
   align-self: center;
+  display: flex;
+}
+
+.searchbar label img {
+  width: 32px;
 }
 
 .searchbar input {
-  width: 60%;
-  height: 40%;
+  width: 90%;
+  height: 32px;
   justify-self: start;
   align-self: center;
+  background-color: #e2e8f0;
+  border: none;
+  border-radius: 20px;
 }
 
 .userinfo {
@@ -172,8 +177,7 @@ main {
 }
 
 .userinfo img.bell {
-  width: 40px;
-  height: 40px;
+  width: 25px;
 }
 
 .userinfo img.profile-picture {
@@ -181,27 +185,32 @@ main {
   height: 40px;
 }
 
+.userinfo h4 {
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
+
 .greeting {
   grid-area: greeting;
   display: grid;
-  grid-template: 1fr / 1fr 4fr;
+  grid-template: 1fr / 1fr 3fr;
   column-gap: 20px;
   align-items: center;
 }
 
 .greeting .profile-picture {
-  width: 70px;
-  height: 70px;
-  background-color: black;
   justify-self: end;
 }
 
 .greeting .greeting-message {
-  font-size: 2rem;
+  font-size: 1.7rem;
+  font-weight: bold;
+  line-height: 2rem;
 }
 
 .greeting .greeting-message::first-line {
-  font-size: 1rem;
+  font-size: 0.9rem;
+  font-weight: bold;
 }
 
 .buttons {
@@ -209,21 +218,24 @@ main {
   display: grid;
   grid-template: 1fr / 1fr 1fr 1fr;
   justify-self: start;
-  justify-items: center;
+  justify-items: start;
   align-items: center;
-  column-gap: 30px;
   width: 100%;
 }
 
 .buttons button {
-  width: 80%;
-  height: 30%;
+  width: 70%;
+  height: 50%;
+  background-color: #1992d4;
+  color: white;
+  border-style: none;
+  border-radius: 20px;
 }
 .projects {
   grid-area: projects;
 
   display: grid;
-  grid-template: 1fr 10fr / 1fr;
+  grid-template: 1fr 12fr / 1fr;
   row-gap: 10px;
 }
 
