@@ -229,7 +229,7 @@ main {
   background-color: #1992d4;
   color: white;
   border-style: none;
-  border-radius: 20px;
+  border-radius: 30px;
 }
 .projects {
   grid-area: projects;
@@ -348,24 +348,50 @@ main {
 
   padding-left: 20px;
   padding-right: 30px;
+  padding-top: 10px;
 }
 
 .trending h4 {
-  align-self: flex-end;
+  align-self: center;
+  font-size: 1.4rem;
 }
 
 .trending .profiles {
   display: grid;
   grid-template: 1fr 1fr 1fr 1fr / 1fr;
+
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 2px 2px #d6dbe3;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10%;
+  padding-right: 30%;
+
+  row-gap: 10px;
 }
 
 .trending .profiles .profile {
   display: grid;
   grid-template: 1fr / 1fr 6fr;
   align-items: center;
+  column-gap: 20px;
 }
 
 .trending .profiles .profile img {
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
+}
+
+.trending .text p {
+  padding-top: 2px;
+  font-size: 0.9rem;
+  font-weight: bolder;
+  color: #a8a8a8;
+}
+
+.trending .text h5 {
+  padding-top: 2px;
+  font-size: 1.1rem;
+  font-weight: 600;
 }
