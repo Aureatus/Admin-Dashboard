@@ -69,7 +69,7 @@ main {
   background-color: #e2e8f0;
 
   display: grid;
-  grid-template: 1fr 1fr / 2fr 1fr;
+  grid-template: 3fr 2fr / 2fr 1fr;
   grid-template-areas:
     "projects announcements"
     "projects trending";
@@ -240,7 +240,9 @@ main {
 }
 
 .projects h4 {
-  align-self: flex-end;
+  align-self: center;
+  padding-top: 10px;
+  font-size: 1.4rem;
 }
 
 .projects .content {
@@ -292,23 +294,35 @@ main {
 .announcements {
   grid-area: announcements;
   display: grid;
-  grid-template: 1fr 5fr / 1fr;
+  grid-template: 1fr 6fr / 1fr;
+
+  padding-left: 20px;
+  padding-right: 30px;
+  row-gap: 2px;
 }
 
 .announcements h4 {
-  align-self: flex-end;
+  align-self: center;
+  font-size: 1.4rem;
 }
 
 .announcements .content {
   display: grid;
   grid-template: 1fr 1fr 1fr / 1fr;
   align-items: center;
+
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 2px 2px #d6dbe3;
+  padding-top: 30px;
 }
 
 .announcement {
   display: grid;
   height: 100%;
   grid-template: 1fr 3fr 1fr / 1fr;
+  padding-left: 10%;
+  padding-right: 30%;
 }
 
 .announcement hr {
@@ -317,10 +331,23 @@ main {
   background-color: gray;
 }
 
+.announcement h5 {
+  font-size: 1.1rem;
+}
+
+.announcement p {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #a8a8a8;
+}
+
 .trending {
   grid-area: trending;
   display: grid;
   grid-template: 1fr 12fr / 1fr;
+
+  padding-left: 20px;
+  padding-right: 30px;
 }
 
 .trending h4 {
