@@ -251,16 +251,42 @@ main {
 
 .card {
   display: grid;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 2px 2px #d6dbe3;
+  border-left: 8px solid #f0b429;
+
+  align-items: center;
+}
+
+.card .text {
+  padding-left: 30px;
+}
+
+.card .text h4 {
+  font-size: 1.4rem;
+}
+
+.card .text p {
+  padding-top: 10px;
+  font-size: 1.2rem;
+  font-weight: bolder;
+  color: #a8a8a8;
 }
 
 .card .logos {
-  justify-self: end;
+  justify-self: center;
   align-self: center;
+  padding-left: 40%;
+
+  display: grid;
+  grid-template: 1fr / 1fr 1fr 1fr;
+  column-gap: 30%;
 }
 
 .card .logos img {
-  height: 30px;
-  width: 30px;
+  height: 28px;
+  width: 28px;
 }
 
 .announcements {
